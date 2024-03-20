@@ -89,7 +89,7 @@ try:
                                 values[p[0].lower()] = {}
                             if m.lower() not in values[p[0].lower()]:
                                 values[p[0].lower()][m.lower()] = []
-                            values[p[0].lower()][m.lower()].append([time.strftime("%d/%m/%Y %H:%M:%S"), current_value])
+                            values[p[0].lower()][m.lower()].append([time.strftime("%d/%m/%Y %H:%M:%S"), float(current_value)])
                             save_data()
                     except (ValueError, KeyError):
                         print(f'\t\t{m} provided no data about {p[0]}')

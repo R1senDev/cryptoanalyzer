@@ -20,7 +20,7 @@ def get_available_markets() -> list[str]:
     return sorted([MARKETS[market]['name'] for market in MARKETS])
 
 
-def get_symbol_price(pair: str, market: str = 'Binance', prefer_currency: str = 'USDT') -> float | None:
+def get_symbol_price(pair: str, market: str = 'Binance', prefer_currency: str = 'USDT') -> float:
     market = market.lower()
     pair = pair.upper()
     match market:
