@@ -1,5 +1,5 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QComboBox, QWidget, QPushButton, QGridLayout, QCheckBox, QLineEdit
-from PyQt6.QtCore    import QAbstractTableModel, Qt
+from PyQt6.QtCore    import Qt
 from PyQt6.QtGui     import QIcon
 
 from requests.exceptions import ConnectionError, ConnectTimeout
