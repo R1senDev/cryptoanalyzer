@@ -39,7 +39,7 @@ try:
                     try:
                         print(f'\t{p.upper()}: {get_symbol_price(p, market)} ({market})')
                     except (ValueError, KeyError):
-                        print(f'\t{m} provided no data about {p.upper()}')
+                        print(f'\t{market} provided no data about {p.upper()}')
             sleep(interval)
     except KeyboardInterrupt:
         print('Bye! :)')
